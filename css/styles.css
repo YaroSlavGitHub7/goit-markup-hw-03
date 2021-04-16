@@ -9,24 +9,7 @@
 /* цвет фона футер background: #2F303A */
 /* цвет текста футер color: rgba(255, 255, 255, 0.6) */
 
-@font-face {
-    font-family: "Raleway";
-    src: url(../fonts/raleway-v19-latin_cyrillic/raleway-v19-latin_cyrillic-700.woff) format("woff"),
-      url(../fonts/raleway-v19-latin_cyrillic/raleway-v19-latin_cyrillic-700.woff2) format("woff2");
-    font-style: normal;
-    font-display: swap;
-  }
-.logo-font {
-    font-family:"Raleway", sans-serif;
-    font-size: 26px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    font-weight: 700;
-}
-.log {
-    display: inline-block;
-    margin-right: 70px;
-}
+
 
 :root {
     --white-color:#FFFFFF ;
@@ -57,19 +40,60 @@ p {
   margin-bottom: 20px;
 }
 
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/raleway-v19-latin_cyrillic/raleway-v19-latin_cyrillic-700.woff) format("woff"),
+      url(../fonts/raleway-v19-latin_cyrillic/raleway-v19-latin_cyrillic-700.woff2) format("woff2");
+    font-style: normal;
+    font-display: swap;
+  }
+.logo-font {
+    font-family:"Raleway", sans-serif;
+    font-size: 26px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+}
+.log {
+    display: inline-block;
+    margin-right: 90px;
+    margin-left: 215px;
+}
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.page-header .container {
+    display: flex;
+    justify-content: flex-end;
+}
 .container {
-  width: 1200px;  
+  width: 1600px;  
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/*display: flex;
-    flex-wrap: nowrap;
-    align-items: stretch;
- */
+.menu {
+    display: inline-flex;
+}
 
+.menu-item:not(:last-child) {
+    margin-right: 50px;
+}
+.nav-header {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+.header-contact {
+    margin-right: 215px;
+   
+}   
+.header-contacts {
+     align-items: center;
+}
 body {
     background: var(--brand-color) ;
     color:var(--black-color);
@@ -86,8 +110,14 @@ header {
     letter-spacing: 0.02em;
 }
 .section-hero {
-    width: calc(100% / 12 * 6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1600px;
+    height: 600px;
 }
+
 .team {
     background: #F5F4FA
 }
@@ -186,6 +216,8 @@ a {
     padding-left: 0;
     list-style: none;
 }
+
+
 
 button {
     cursor: pointer;
