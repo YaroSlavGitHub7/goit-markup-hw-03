@@ -47,8 +47,8 @@ a {
   
 img {
     display: block;
-    max-width: 100%;
-    height: auto;
+    /*max-width: 100%;
+    height: auto;*/
 }
 figure {
     margin: 0;
@@ -296,7 +296,11 @@ header {
     padding-top: 94px ;
    
 }
-    
+.fig-img {
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
 .fig-title {
     font-weight: 700;
     font-size: 18px;
@@ -304,14 +308,13 @@ header {
     letter-spacing: 0.06em;
     padding: 20px 24px 4px 20px ;
 }
-.fig-link {
+.figure-item {
     font-weight: 400 ;
     font-size: 16px ;
     line-height: 1.88 ;
     letter-spacing: 0.03em;
     color:var(--grey-color);
-    padding-left: 20px;
-}
+    }
 
 .figures {
     display: flex;
@@ -331,6 +334,11 @@ header {
     border: 1px solid #EEEEEE;
     width: 370px;
     height: 404px;
+}
+.fig-img {
+    margin-left: -20px;
+    margin-top: -20px;
+    margin-bottom: 20px;
 }
 
 
