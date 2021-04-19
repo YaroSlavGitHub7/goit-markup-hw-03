@@ -9,8 +9,6 @@
 /* цвет фона футер background: #2F303A */
 /* цвет текста футер color: rgba(255, 255, 255, 0.6) */
 
-
-
 :root {
     --white-color:#FFFFFF ;
     --black-color:#212121 ;
@@ -23,7 +21,12 @@
 html {
     box-sizing: border-box;
 }
-  
+body {
+    background: var(--brand-color) ;
+    color:var(--black-color);
+    font-family: var(--main-font);
+}  
+
 *,
 *::before,
 *::after {
@@ -34,19 +37,35 @@ h2,
 h3,
 p {
   margin-top: 0;
+  margin-bottom: 0;
 }
-
-p {
-  margin-bottom: 20px;
-}
-
-@font-face {
-    font-family: "Raleway";
-    src: url(../fonts/raleway-v19-latin_cyrillic/raleway-v19-latin_cyrillic-700.woff) format("woff"),
-      url(../fonts/raleway-v19-latin_cyrillic/raleway-v19-latin_cyrillic-700.woff2) format("woff2");
-    font-style: normal;
-    font-display: swap;
+a {
+    outline: none;
+    text-decoration: none;
+    color:var(--black-color);
   }
+  
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+figure {
+    margin: 0;
+    padding-left: 0;
+}
+.list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.container {
+  width: 1200px;  
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .logo-font {
     font-family:"Raleway", sans-serif;
     font-size: 26px;
@@ -56,23 +75,16 @@ p {
 }
 .log {
     display: inline-block;
-    margin-right: 90px;
-    margin-left: 215px;
+    margin-right: 93px;
 }
 .page-header {
     padding-top: 24px;
     padding-bottom: 25px;
+    border: 1px solid rgba(236, 236, 236, 1)
 }
 .page-header .container {
     display: flex;
     justify-content: flex-end;
-}
-.container {
-  width: 1600px;  
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .menu {
@@ -87,20 +99,8 @@ p {
     align-items: center;
     margin-right: auto;
 }
-.header-contact {
-    margin-right: 215px;
-   
-}   
 .header-contacts {
      align-items: center;
-}
-body {
-    background: var(--brand-color) ;
-    color:var(--black-color);
-    font-family: var(--main-font)
-}
-.blue-text {
-    color: var(--object-color);
 }
 header {
     background:var(--brand-color);
@@ -109,17 +109,17 @@ header {
     line-height: 1.17;
     letter-spacing: 0.02em;
 }
+
 .section-hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1600px;
-    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
 }
-
-.team {
-    background: #F5F4FA
+.blue-text {
+    color: var(--object-color);
 }
 
 .link:hover,
@@ -138,9 +138,16 @@ header {
     font-weight: 900;
     color: var(--white-color) ;
     text-align: center;
+    max-width: 696px;
+    margin: 0 auto;
+    padding-top: 200px;
 }
 .dark-bg {
     background: var(--dark-bg);
+    max-width: 1600px ;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 94px;
 }
 
 .main-button {
@@ -149,10 +156,25 @@ header {
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-bottom: 200px;
+    padding: 0;
 }
+
 .title-invisible {
     display: none;
 }
+.list-specific {
+    display: inline-flex;
+    justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 10px;
+}
+
 .works-specifications {
     font-size: 14px;
     line-height: 1.71;
@@ -163,13 +185,55 @@ header {
     font-size: 14px;
     line-height: 1.14;
     color:var(--black-color);
+    margin-bottom: 10px;
 }
+.specifications {
+    padding: 0px 30px 94px 0px ;
+}
+.list-works {
+    display: inline-flex; 
+    padding-top: 50px;
+}
+.li-img {
+  padding-left: 30px;
+  padding-bottom: 94px;
+}
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -50px;
+    padding-top: 50px ;
+    padding-bottom: 94px ;
+}
+.team-item {
+    margin-left: 30px;
+    margin-top: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: 270px;
+    height: 368px;
+
+}
+
 .works,
 .team-title  {
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.team {
+    background: #F5F4FA;
+    padding-top: 94px;
+    max-width: 1600px ;
+    margin-left: auto;
+    margin-right: auto;
 }
 .team-member {
     font-size: 16px;
@@ -185,20 +249,23 @@ header {
     text-align: center;
     letter-spacing: 0.03em;
     color:var(--black-color);
+    padding-top: 30px ;
+    padding-bottom: 10px ;
 }
 .grey-text {
     color:var(--grey-color) ;
 }
-a {
-    outline: none;
-    text-decoration: none;
-    color:var(--black-color);
-  }
+.footer-logo {
+    padding-top: 60px ;
+    padding-bottom: 20px ;
+    color:var(--white-color) ;
+}
 .footer-text {
     font-style: normal;   
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    padding-bottom: 60px ;
 }
 .adres-txt{
     color:var(--white-color)
@@ -210,33 +277,60 @@ a {
 .blue-background {
     background: var(--object-color) ;
 }
-
-.list {
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
-}
-
-
-
-button {
+.button {
     cursor: pointer;
     background: #F5F4FA ;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     letter-spacing: 0.06em;
- } 
+    border: 0px;
+    border-radius: 4px;
+    margin-right: 8px;
+    padding: 6px 22px;
+   }   
+ .menu-button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 94px ;
+   
+}
+    
 .fig-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    padding: 20px 24px 4px 20px ;
 }
 .fig-link {
     font-weight: 400 ;
     font-size: 16px ;
     line-height: 1.88 ;
     letter-spacing: 0.03em;
-    color:var(--grey-color)
+    color:var(--grey-color);
+    padding-left: 20px;
 }
+
+.figures {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding-top: 50px;
+    padding-bottom: 94px;
+    
+}
+.list-figure {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    padding-top: 0 px;
+    background: #FFFFFF;    
+    border: 1px solid #EEEEEE;
+    width: 370px;
+    height: 404px;
+}
+
+
