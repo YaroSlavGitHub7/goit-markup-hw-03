@@ -54,6 +54,7 @@ img {
 }
 .section {
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .logo-font {
@@ -135,15 +136,12 @@ header {
     text-align: center;
     max-width: 696px;
     margin: 0 auto;
-    padding-top: 200px;
+    padding-top: 106px;
    
 }
 .dark-bg {
     background: var(--dark-bg);
-    max-width: 1600px ;
-    margin-left: auto;
-    margin-right: auto;
-   }
+ }
 
 .main-button {
     color: var(--white-color) ;
@@ -156,7 +154,7 @@ header {
     border: none;
     border-radius: 4px;
     margin-top: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 106px;
     padding: 0;
 }
 
@@ -188,8 +186,7 @@ header {
 }
 .list-works {
     display: inline-flex; 
-    padding-top: 50px;
-   }
+}
 .li-img {
   padding-left: 30px;
   }
@@ -224,8 +221,7 @@ header {
     max-width: 1600px ;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 94px
-}
+    }
 .team-member {
     font-size: 16px;
     line-height: 1.17;
@@ -246,9 +242,10 @@ header {
 .grey-text {
     color:var(--grey-color) ;
 }
-
+footer {
+    padding: 60px 0px;
+}
 .footer-logo {
-    padding-top: 60px ;
     padding-bottom: 20px ;
     color:var(--white-color) ;
 }
@@ -257,7 +254,6 @@ header {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    padding-bottom: 60px ;
 }
 .adres-txt{
     color:var(--white-color)
@@ -268,6 +264,10 @@ header {
 
 .blue-background {
     background: var(--object-color) ;
+}
+.section-button {
+    padding-top: 94px;
+    padding-bottom: 50px;
 }
 .button {
     cursor: pointer;
@@ -313,7 +313,7 @@ header {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 50px;
+  
     flex-basis: calc((100% - 3 * 30px) / 3);
     margin-left: -30px;
     margin-top: -30px;
