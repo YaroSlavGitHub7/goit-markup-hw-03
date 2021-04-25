@@ -22,25 +22,45 @@
           </ul>
       </nav>       
           <ul class="list menu header-contacts" >
-              <li class="menu-item"><a class="link header-link-hight grey-text" href="">info@devstudio.com</a></li>
-              <li class="menu-item"><a class="link header-link-hight grey-text" href="">+38 096 111 11 11</a></li>
+              <li class="menu-item">
+                <a class="link header-link-hight grey-text" href="">
+                  <svg class="hdr-icon-mail"><use href="./img/icons/sprite.svg#icon-envelope"></use></svg>
+                   info@devstudio.com</a>
+              </li>
+              <li class="menu-item">
+                <a class="link header-link-hight grey-text" href="">
+                  <svg class="hdr-icon-tel"><use href="./img/icons/sprite.svg#icon-smartphone"></use></svg>
+                  +38 096 111 11 11</a>
+              </li>
           </ul>
     </div>
   </header>
   <main>
-    <section class="section-button">
-      <div class="container">
-        <ul class="list menu-button">
-            <li class=""><button type="button" class="button">Все</button></li>
-            <li class=""><button type="button" class="button">Веб-сайты</button></li>
-            <li class=""><button type="button" class="button">Приложения</button></li>
-            <li class=""><button type="button" class="button">Дизайн</button></li>
-            <li class=""><button type="button" class="button">Маркетинг</button></li>
-        </ul>
+    <section class="container section-button">
+      <div class="projects">
+        <h1 class="title-invisible">НАШИ ПРОЭКТЫ</h1>
+          <ul class="list">
+            <li></li>
+            <li></li>
+          </ul>
+          <ul class="list">
+            <li></li>
+            <li></li>
+          </ul>
       </div>
+        <nav>
+            <ul class="list menu-button">
+                <li class=""><button type="button" class="button">Все</button></li>
+                <li class=""><button type="button" class="button">Веб-сайты</button></li>
+                <li class=""><button type="button" class="button">Приложения</button></li>
+                <li class=""><button type="button" class="button">Дизайн</button></li>
+                <li class=""><button type="button" class="button">Маркетинг</button></li>
+            </ul>
+        </nav>
     </section>
-     <section class="container">
-          <ul class="list cards">
+    <section>
+      <div class="container">
+             <ul class="list cards">
               <li class="list-card">
                 <img class="card-img" src="./img/img41.jpg" width="370" height="294" alt="Технокряк"/>
                 <div class="card">
@@ -105,22 +125,55 @@
                 </div>
               </li>
             </ul>
-      </section>   
+      </div> 
+    </section>  
   </main>
   <footer class="dark-bg">
-    <div class="container">
-    <a href="./index.html" class="log logo-font footer-logo"><span class="blue-text">Web</span>Studio</a>
-    <address>
-    <ul class="list footer-text">
-      <li>
-        <a class="adres-txt" href="https://goo.gl/maps/XNxuDnSuaGoXyThm7" target="_blank" rel="noopener noreferrer">
-        г. Киев, пр-т Леси Украинки, 26</a>
-      </li>
-      <li ><a class=" link footer-grey-txt" href="mailto:info@example.com">info@example.com</a></li>
-      <li><a class="link footer-grey-txt" href="tel:+380991111111">+38 099 111 11 11</a></li>
-    </ul>
-    </address>
-  </div>
-  </footer>  
+    <div class="container footer-flex">
+      <div>
+        <a href="./index.html" class="log logo-font footer-logo"><span class="blue-text">Web</span>Studio</a>
+        <address>
+        <ul class="list footer-text">
+          <li><a class="link adres-txt" href="https://goo.gl/maps/XNxuDnSuaGoXyThm7" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
+          <li><a class=" link footer-grey-txt" href="mailto:info@example.com">info@example.com</a></li>
+          <li><a class="link footer-grey-txt" href="tel:+380991111111">+38 099 111 11 11</a></li>
+        </ul>
+        </address>
+      </div>
+      <div class="ftr-social">
+        <h2 class="ftr-social-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+        <ul class="social-icons">
+          <li class="list social-icons-item">
+            <a href="" class="ftr-icons-link social-icons-link" target="_blank" rel="noopener noreferrer">
+              <svg class="social-icons-svg">
+                <use class="" href="./img/icons/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list social-icons-item">
+            <a href="" class="ftr-icons-link social-icons-link" target="_blank" rel="noopener noreferrer">
+              <svg class="social-icons-svg">
+                <use class="" href="./img/icons/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list social-icons-item">
+            <a href="" class="ftr-icons-link social-icons-link" target="_blank" rel="noopener noreferrer">
+              <svg class="social-icons-svg">
+                <use class="" href="./img/icons/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list social-icons-item">
+            <a href="" class="ftr-icons-link social-icons-link" target="_blank" rel="noopener noreferrer">
+              <svg class="social-icons-svg">
+                <use class="" href="./img/icons/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer> 
 </body>
 </html>

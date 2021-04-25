@@ -30,6 +30,7 @@ p {
   margin-bottom: 0;
 }
 a {
+    outline: none;
     text-decoration: none;
     color:var(--black-color);
   }
@@ -69,8 +70,6 @@ img {
     margin-right: 93px;
 }
 .page-header {
-    padding-top: 24px;
-    padding-bottom: 25px;
     border: 1px solid rgba(236, 236, 236, 1)
 }
 .page-header .container {
@@ -81,6 +80,8 @@ img {
     align-items: center;
 }   
 .header-link-hight {
+    display: flex;
+    align-items: center;
     padding: 32px 0px;
 }     
 .menu {
@@ -94,6 +95,18 @@ img {
     display: flex;
     align-items: center;
     margin-right: auto;
+}
+.hdr-icon-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor; 
+}
+.hdr-icon-tel {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor; 
 }
 
 header {
@@ -111,6 +124,9 @@ header {
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
+}
+.hero {
+    padding: 200px 0px;
 }
 .blue-text {
     color: var(--object-color);
@@ -136,12 +152,20 @@ header {
     text-align: center;
     max-width: 696px;
     margin: 0 auto;
-    padding-top: 106px;
-   
-}
+ }
+
+/*background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/banner/banner.jpg');*/
+
+
+
 .dark-bg {
     background: var(--dark-bg);
- }
+   }
 
 .main-button {
     color: var(--white-color) ;
@@ -154,7 +178,6 @@ header {
     border: none;
     border-radius: 4px;
     margin-top: 30px;
-    margin-bottom: 106px;
     padding: 0;
 }
 
@@ -181,6 +204,7 @@ header {
 .specifications {
     padding: 0px 30px 0px 0px ;
 }
+
 .section-works {
      padding-bottom: 94px;
 }
@@ -199,13 +223,12 @@ header {
 .team-item {
     margin-left: 30px;
     margin-top: 50px;
-    background: #FFFFFF;
+    background: var(--brand-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
                 0px 1px 1px rgba(0, 0, 0, 0.14), 
                 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     width: 270px;
-    height: 368px;
 }
 
 .works,
@@ -214,14 +237,13 @@ header {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
-    margin-bottom: 50px ;
+    margin-bottom: 50px ; /* */
    }
 .team {
     background: #F5F4FA;
-    max-width: 1600px ;
     margin-left: auto;
     margin-right: auto;
-    }
+}
 .team-member {
     font-size: 16px;
     line-height: 1.17;
@@ -243,7 +265,7 @@ header {
     color:var(--grey-color) ;
 }
 footer {
-    padding: 60px 0px;
+    padding: 60px 0px; 
 }
 .footer-logo {
     padding-bottom: 20px ;
@@ -256,7 +278,7 @@ footer {
     letter-spacing: 0.03em;
 }
 .adres-txt{
-    color:var(--white-color)
+    color:var(--white-color);
 }
 .footer-grey-txt {
     color: rgba(255, 255, 255, 0.6);
@@ -265,7 +287,7 @@ footer {
 .blue-background {
     background: var(--object-color) ;
 }
-.section-button {
+.section-button { 
     padding-top: 94px;
     padding-bottom: 50px;
 }
@@ -313,7 +335,6 @@ footer {
 .cards {
     display: flex;
     flex-wrap: wrap;
-  
     flex-basis: calc((100% - 3 * 30px) / 3);
     margin-left: -30px;
     margin-top: -30px;
@@ -323,10 +344,62 @@ footer {
     margin-left: 30px;
     margin-top: 30px;
     padding-top: 0 px;
-    background: #FFFFFF;    
+    background: var(--brand-color);    
     width: 368px;
     height: 404px;
 }
+.social-icons {
+    display: inline-flex;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.social-icons-team {
+    padding-top: 16px;
+    padding-bottom: 30px;
+}
+.social-icons-svg {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+.social-icons-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
 
+.social-icons-item:not(:last-child) {
+    margin-right: 10px;
+}
+.social-icons-link:hover ,
+.social-icons-link:focus {
+    background-color:  var(--object-color);
+}
+.social-icons-link:hover .social-icons-svg,
+.social-icons-link:focus .social-icons-svg {
+    fill: var(--brand-color);
+}
+.footer-flex {
+    display: flex;
+    align-items: top;
+    margin-right: auto;
+    }
+.ftr-social {
+    padding-top: 15px;
+    padding-left: 70px;
+}
 
-
+.ftr-social-title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--brand-color);
+    padding-bottom: 20px;
+}
+.ftr-icons-link {
+    background-color:rgba(255, 255, 255, 0.1);
+}
