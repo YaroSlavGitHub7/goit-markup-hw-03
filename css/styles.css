@@ -202,7 +202,7 @@ header {
     margin-bottom: 10px;
 }
 .specifications {
-    padding: 0px 30px 0px 0px ;
+    margin: 0px 30px 0px 0px ;
 }
 
 .section-works {
@@ -211,9 +211,9 @@ header {
 .list-works {
     display: inline-flex; 
 }
-.li-img {
-  padding-left: 30px;
-  }
+.li-img:not(:last-child) {
+    margin-right: 30px;
+}
 .card-set {
     display: flex;
     flex-wrap: wrap;
@@ -268,7 +268,7 @@ footer {
     padding: 60px 0px; 
 }
 .footer-logo {
-    padding-bottom: 20px ;
+    margin-bottom: 20px ;
     color:var(--white-color) ;
 }
 .footer-text {
@@ -287,10 +287,7 @@ footer {
 .blue-background {
     background: var(--object-color) ;
 }
-.section-button { 
-    padding-top: 94px;
-    padding-bottom: 50px;
-}
+
 .button {
     cursor: pointer;
     background: #F5F4FA ;
@@ -307,6 +304,8 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-top: 94px;
+    padding-bottom: 50px;
  }
 .card-img {
     margin-bottom: -1px;
@@ -385,7 +384,7 @@ footer {
 }
 .footer-flex {
     display: flex;
-    align-items: top;
+    align-items: baseline;
     margin-right: auto;
     }
 .ftr-social {
@@ -398,7 +397,7 @@ footer {
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--brand-color);
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 .ftr-icons-link {
     background-color:rgba(255, 255, 255, 0.1);
